@@ -14,6 +14,20 @@ Extra templates for [django-suit](https://github.com/darklow/django-suit) to sup
 pip install suit_guardian
 ```
 
+Add to `INTALLED_APPS` before `django-guardian`:
+
+```
+INSTALLED_APPS = (
+    'suit',
+    'suit_guardian',  # <----
+    'django.contrib.admin',
+    # ...
+    'guardian',
+    # ...
+)
+
+```
+
 ## Modified templates
 
 - templates
